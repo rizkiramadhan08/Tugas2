@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitylogin">
+
+
+    <Button
+        android:id="@+id/kembalilog1"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/arrow_back"
+        android:background="@drawable/btn_back_panah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="kembali"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textlog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:textColor="#4D4D4D"
+        android:text="Login"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textlog2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/rmontser"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlog1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editteksL1"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:background="@drawable/btnregis"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlog2"
+        app:startIconDrawable="@drawable/gmail"
+        app:startIconTint="#1A529D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textCapWords"
+           />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textlog3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/rmontser"
+        android:text="Kata Sandi"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editteksL1" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editteksL2"
+        android:layout_width="300dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btnregis"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlog3"
+        app:startIconDrawable="@drawable/konci"
+        app:startIconTint="#1A529D"
+        app:passwordToggleDrawable="@drawable/lockeye"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#1A529D"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="14"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnl1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="592dp"
+        android:width="349dp"
+        android:height="70dp"
+        android:background="@drawable/btnlogin"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,25 +10,21 @@ import androidx.core.view.WindowInsetsCompat;
 import android.view.View;
 import android.content.Intent;
 
-public class loginregister extends AppCompatActivity {
+public class register extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_loginregister);
+        setContentView(R.layout.activity_register);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-    public void login(View view) {
-        Intent login = new Intent(loginregister.this, Activitylogin.class);
-        startActivity(login);
-    }
-    public void register(View view) {
-        Intent register = new Intent(loginregister.this, com.example.tugas2.register.class);
-        startActivity(register);
+    public void kembalireg(View view) {
+        Intent kembalireg = new Intent(register.this, loginregister.class);
+        startActivity(kembalireg);
     }
 }
