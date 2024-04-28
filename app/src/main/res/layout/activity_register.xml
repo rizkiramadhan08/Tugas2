@@ -198,6 +198,7 @@
         android:background="@drawable/btnlogin"
         android:fontFamily="@font/montserratsemibold"
         android:text="Registrasi"
+        android:onClick="kelogin"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textAllCaps="false"

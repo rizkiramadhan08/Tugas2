@@ -27,4 +27,8 @@ public class Activitylogin extends AppCompatActivity {
         Intent kembali = new Intent(Activitylogin.this, loginregister.class);
         startActivity(kembali);
     }
+    public void kehome(View view) {
+        Intent kehome = new Intent(Activitylogin.this, homepage.class);
+        startActivity(kehome);
+    }
 }

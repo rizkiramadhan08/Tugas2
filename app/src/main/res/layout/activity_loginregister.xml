@@ -37,12 +37,13 @@
         android:background="@drawable/btnlogin"
         android:text="Login"
         android:fontFamily="@font/montserratsemibold"
-        android:textSize="15dp"
+        android:textSize="18dp"
         android:textColor="@color/white"
         android:onClick="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgl2" />
+        app:layout_constraintTop_toBottomOf="@+id/imgl2"
+        android:textAllCaps="false"/>
 
     <Button
         android:id="@+id/btn3"
@@ -52,15 +53,16 @@
         android:width="349dp"
         android:height="70dp"
         android:background="@drawable/btnregis"
-        android:text="register"
-        android:fontFamily="@font/rmontser"
-        android:textSize="15dp"
+        android:text="Register"
+        android:fontFamily="@font/montserratsemibold"
+        android:textSize="18dp"
         android:onClick="register"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:layout_editor_absoluteX="31dp"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/textl1"

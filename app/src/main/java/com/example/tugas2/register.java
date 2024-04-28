@@ -27,4 +27,9 @@ public class register extends AppCompatActivity {
         Intent kembalireg = new Intent(register.this, loginregister.class);
         startActivity(kembalireg);
     }
+
+    public void kelogin(View view) {
+        Intent kelogin = new Intent(register.this, Activitylogin.class);
+        startActivity(kelogin);
+    }
 }
